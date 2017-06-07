@@ -1,4 +1,41 @@
 html, body {
-  background: #121212;
+  background: #282a2e;
   color: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+}
+
+main {
+  padding-top: 80px;
+  width: 100%;
+  max-width: 700px;
+  @media screen and (min-width:1000px) {
+    padding-top: 180px;
+    margin-left: 100px;
+  }
+  > h1 {
+    font-weight: 400;
+  }
+  > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  hr {
+    width: 40px;
+    height: 3px;
+    border: none;
+    background: #fff;
+    margin: 5em 0;
+  }
+  #links {
+    li {
+      list-style-type: none;
+      > #links-bilibili {
+        svg:last-child {
+          margin-left: -5px;
+        }
+      }
+    }
+  }
 }
